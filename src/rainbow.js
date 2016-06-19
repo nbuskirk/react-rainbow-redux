@@ -14,7 +14,7 @@ var Rainbow = React.createClass({
 			colors = colors.concat(colors);
 		}
 		return colors.map(function(color,i){
-			return <RainbowRow color={color.hex} key={i} />
+			return <RainbowRow color={color.hex} active={color.active} key={i} />
 		})
 	},
 	changeState:function(props){
@@ -27,7 +27,7 @@ var Rainbow = React.createClass({
 	drawOptions:function() {
 		return (
 			<div className="options">
-				<input type="checkbox" onChange={this.changeState} />Double Rainbow
+				<input type="checkbox" checked={this.state.isChecked} onChange={this.changeState} />Double Rainbow
 			</div>
 		)
 	},
@@ -68,9 +68,9 @@ var RainbowRow = React.createClass({
 			height: window.innerHeight+"px"
 		};
 		if(this.state.isSelected) {
-			style.backgroundColor = highlightColor;
+			style.backgroundColor = this.props.active;
 		}
-		return <a onClick={this.handleClick} isSelected={this.state.isSelected} href="#" style={style}></a>
+		return <a onClick={this.handleClick} href="#" style={style}></a>
 	}
 })
 ReactDOM.render(<Rainbow data={colorData}  />, document.getElementById('rainbow'));

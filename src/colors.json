@@ -1,31 +1,38 @@
 var colorArray = {
     "colorsArray":[{
             "color":"red",
-            "hex":"#ff0000"
+            "hex":"#ff0000",
+            "highlightColor": "#ec883a"
         },
         {
             "color":"orange",
-            "hex":"#ec883a"
+            "hex":"#ec883a",
+            "highlightColor": "#ffff00"
         },
         {
             "color":"yellow",
-            "hex":"#ffff00"
+            "hex":"#ffff00",
+            "highlightColor": "#00ff00"
         },
         {
             "color":"green",
-            "hex":"#00ff00"
+            "hex":"#00ff00",
+            "highlightColor": "#0000ff"
         },
         {
             "color":"blue",
-            "hex":"#0000ff"
+            "hex":"#0000ff",
+            "highlightColor": "#4b0082"
         },
         {
             "color":"indigo",
-            "hex":"#4b0082"
+            "hex":"#4b0082",
+            "highlightColor": "#ee82ee"
         },
         {
             "color":"violet",
-            "hex":"#ee82ee"
+            "hex":"#ee82ee",
+            "highlightColor": "#ff0000"
         }
     ]
 }
