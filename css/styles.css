@@ -1,0 +1,58 @@
+html {
+    margin:0;
+    padding:0;
+    height:100%;
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+}
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+.container {
+  text-align:center;
+}
+div.options {
+  position:fixed;
+  top:50%;
+  left:50%;
+  background:rgba(0,0,0,0.75);
+  width:200px;
+  height:100px;
+  color:white;
+  margin-left:-100px;
+  margin-top:-50px;
+  border:1px solid #333;
+  border-radius:10px;
+  box-shadow:1px 1px 5px black;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Open Sans MS', Sans-serif;
+}
+div.options input {
+  margin-top:45px;
+
+}
+.rainbowRow-enter {
+  opacity: 0.01;
+}
+.rainbowRow-enter.rainbowRow-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.rainbowRow-leave {
+  opacity: 1;
+}
+.rainbowRow-leave.rainbowRow-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+.rainbowRow-appear {
+  opacity: 0.01;
+}
+.rainbowRow-appear.rainbowRow-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
