@@ -70,7 +70,7 @@ var RainbowRow = React.createClass({
 		if(this.state.isSelected) {
 			style.backgroundColor = highlightColor;
 		}
-		return <a onClick={this.handleClick} href="#" color={this.state.isSelected} style={style}></a>
+		return <a onClick={this.handleClick} isSelected={this.state.isSelected} href="#" style={style}></a>
 	}
 })
 ReactDOM.render(<Rainbow data={colorData}  />, document.getElementById('rainbow'));
