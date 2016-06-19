@@ -27,7 +27,7 @@ var Rainbow = React.createClass({
 	drawOptions:function() {
 		return (
 			<div className="options">
-				<input type="checkbox" checked={this.state.isChecked} onChange={this.changeState} />Double Rainbow
+				<input type="checkbox" onChange={this.changeState} />Double Rainbow
 			</div>
 		)
 	},
