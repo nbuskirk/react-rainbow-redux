@@ -31,6 +31,10 @@ div.options {
   box-shadow:1px 1px 5px black;
   font-family: 'Helvetica Neue', 'Helvetica', 'Open Sans MS', Sans-serif;
 }
+a {
+  -webkit-transition-property:background-color;
+  -webkit-transition-duration:0.5s;
+}
 div.options input {
   margin-top:45px;
 
